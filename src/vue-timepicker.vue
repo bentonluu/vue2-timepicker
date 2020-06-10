@@ -417,7 +417,7 @@ export default {
       if (!this.opts.secondRange.length) { return [] }
       return this.renderRangeList(this.opts.secondRange, 'second')
     },
-    
+
     hourLabelText () {
       return this.hourLabel || this.hourType
     },
@@ -1465,7 +1465,7 @@ export default {
       }
     },
 
-    tabHandler (evt) {      
+    tabHandler (evt) {
       if (!this.inputIsEmpty && this.tokenChunksPos && this.tokenChunksPos.length) {
         const currentChunk = this.getCurrentTokenChunk()
         if (!currentChunk) { return }
@@ -1529,7 +1529,7 @@ export default {
       if (validValue) {
         this.setSanitizedValueToSection(chunkType, validValue)
         const newChunkPos = this.getCurrentTokenChunk()
-        this.debounceSetInputSelection(newChunkPos)      
+        this.debounceSetInputSelection(newChunkPos)
       }
       if (this.debugMode) {
         if (validValue) {
@@ -1599,7 +1599,7 @@ export default {
         if (!this.baseOn12Hours) {
           return item === currentValue
         } else {
-          const valueKey = `${currentValue}${this.lowerCasedApm(this.apm) === 'pm' ? 'p' : 'a'}` 
+          const valueKey = `${currentValue}${this.lowerCasedApm(this.apm) === 'pm' ? 'p' : 'a'}`
           return item === valueKey
         }
       })
@@ -2048,6 +2048,7 @@ export default {
 
 .vue__time-picker input.display-time {
   border: 1px solid #d2d2d2;
+  border-radius: 5px;
   width: 10em;
   height: 2.2em;
   padding: 0.3em 0.5em;
