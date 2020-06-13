@@ -1375,7 +1375,7 @@ export default {
         evt.preventDefault()
         this.clearKbInputLog()
         this.clearTime()
-      // Tab
+      // Tabinput.display-time
       } else if (evt.keyCode === 9) {
         this.clearKbInputLog()
         this.tabHandler(evt)
@@ -2050,9 +2050,10 @@ export default {
   border: 1px solid #d2d2d2;
   border-radius: 5px;
   width: 10em;
-  height: 2.2em;
+  height: 2.3em;
   padding: 0.3em 0.5em;
   font-size: 1em;
+  text-align: center;
 }
 
 .vue__time-picker input.display-time.invalid:not(.skip-error-style) {
