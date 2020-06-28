@@ -2037,7 +2037,7 @@ export default {
   display: inline-block;
   position: relative;
   font-size: 1em;
-  width: 10em;
+  /*width: 10em;*/
   font-family: sans-serif;
   vertical-align: middle;
 }
@@ -2049,7 +2049,7 @@ export default {
 .vue__time-picker input.display-time {
   border: 1px solid #d2d2d2;
   border-radius: 5px;
-  width: 10em;
+  width: 7em;
   height: 2.3em;
   padding: 0.3em 0.5em;
   font-size: 1em;
